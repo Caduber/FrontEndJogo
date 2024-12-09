@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section-GUI{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caixa-acoes{
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    height: 100px;
+    width: 50%;
+    position: fixed;
+    top: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

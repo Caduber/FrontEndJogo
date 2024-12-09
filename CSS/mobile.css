@@ -1,0 +1,94 @@
+@media screen and (max-width: 800px){
+
+    /*Personaegns*/
+
+    #goblin{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    #hp-goblin{
+        height: 10px;
+        width: 70px;
+        margin-left: 15px;
+        background-color: #777;
+        position: relative;
+    }
+
+    #goblin img{
+        padding-bottom: 90px;
+        animation-name: respiracao;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    #hp-heroi{
+        height: 10px;
+        width: 70px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        background-color: #777;
+        position: relative;
+    }
+
+    #sprite-heroi{
+        width: 130px;
+        animation-name: respiracao;
+        animation-duration: 1.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes respiracao {
+        from {
+          width: 100px;
+        }
+        to {
+          width: 105px;
+        }
+      }
+
+    /*///////////////////////////////////////*/
+
+    /*Caixa de ações*/
+
+    #caixa-acoes{
+        border-radius: 15px;
+        background-color: #e0e0e0;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        height: 100px;
+        width: 50%;
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #acoes{
+        display: block;
+        flex-direction: row;
+    }
+
+    .btn-act{
+        background: linear-gradient(355deg, rgba(238,240,242,1) 0%, rgb(171, 101, 40) 20%);
+        color: white;
+        border-radius: 2px;
+        text-shadow: #444;
+    }
+
+    #acoes button{
+        font-size: 10px;
+    }
+
+    /*///////////////////////////////////////*/
+
+}

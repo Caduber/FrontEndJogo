@@ -1,0 +1,41 @@
+#goblin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 150px;
+}
+
+#hp-goblin{
+    height: 15px;
+    width: 180px;
+    margin-left: 25px;
+    background-color: #777;
+    position: relative;
+}
+
+#hp-goblin-atual{
+    position: absolute;
+    height: 100%;
+    background-color: #add555;
+    animation: backwards;
+    width: 100%;
+}
+
+#goblin img{
+    animation-name: respiracao;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hiperatividade {
+    from {
+      width: 345px;
+    }
+    to {
+      width: 360px;
+    }
+  }
+

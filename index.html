@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/heroi.css">
+    <link rel="stylesheet" href="CSS/goblin.css">
+    <link rel="stylesheet" href="CSS/caixaTexto.css">
+    <link rel="stylesheet" href="CSS/batalha.css">
+    <link rel="stylesheet" href="CSS/vitoriaderrota.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <title>Jogo Turnos</title>
+</head>
+<body>
+    <main>
+        <section id="batalha">
+            <div id="heroi">
+                <div id="hp-heroi">
+                    <div id="hp-heroi-atual"></div>
+                </div>
+                <div>
+                    <img src="Assets/ladra.png" id="sprite-heroi" alt="">
+                </div>
+            </div>
+            <div id="goblin">
+                <div id="hp-goblin">
+                    <div id="hp-goblin-atual"></div>
+                </div>
+                <div>
+                    <img src="Assets/goblin.png" id="sprite-goblin" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="section-GUI">
+            <div id="caixa-acoes">
+                <div id="acoes">
+                    <button title="Ataca o Alvo" class="btn-act" onclick="darDano()">
+                        Estocada Fugaz
+                    </button>
+                    <button title="Multiplica o dano seu próximo ataque" class="btn-act" onclick="prepararAtaque()">
+                        Preparar Ataque
+                    </button>
+                    <br>
+                    <button title="Cura o seu personagem em 20 de hp" class="btn-act" onclick="enfaixarFeridas()">
+                        Enfaixar Feridas
+                    </button>
+                    <button title="Divide (Diminui o dano do próximo ataque do nimigo)" class="btn-act" onclick="assustarInimigo()">
+                        Assustar Inimigo
+                    </button>
+                </div>
+                <div id="texto-combate">
+                    <p id="texto-luta-ant"></p>
+                    <p id="texto-luta">...</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="lose-screen">
+        <div id="lose-content">
+            <div id="lose-texto">
+                <h1>Você Perdeu!</h1>
+                <article>Melhore e tente na próxima</article>
+            </div>
+        </div>
+    </section>
+    
+    <section id="win-screen">
+        <div id="win-content">
+            <div id="win-texto">
+                <h1>Você ganhou!</h1>
+                <article>Você merece um bitcoin! Pena que eu não tenho :(</article>
+            </div>
+        </div>
+    </section>
+
+    <section id="lose-screen">
+
+    </section>
+
+</body>
+<script src="pesonagens.js"></script>
+<script src="acaoGoblin.js"></script>
+<script src="acaoMusgo.js"></script>
+</html>
+<script src="acao.js"></script>
